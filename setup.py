@@ -2,6 +2,7 @@ import os
 from time import sleep
 
 print("[*] Run this program as root.")
+a = input("[*] Your computer username: ")
 print("[*] Installing dependece...")
 try:
     os.system('sudo pip3 install pyinstaller | grep "Successfully installed"')
@@ -24,7 +25,8 @@ except:
     exit()
 
 try:
-    bash = open("/home/luke/.bash_aliases", "a")
+    user = "/home/" + a + "/.bash_aliases"
+    bash = open(user, "a")
     bash.write("\n \n alias bomb='cd bomb && python3.7 bomb.py'")
     bash.close()
 except:
