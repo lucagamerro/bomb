@@ -27,7 +27,7 @@ except:
 try:
     user = "/home/" + a + "/.bash_aliases"
     bash = open(user, "a")
-    bash.write("\n \n alias bomb='cd bomb && python3.7 bomb.py'")
+    bash.write("\n \n alias bomb='cd bomb && python3.7 bomb.py && cd'")
     bash.close()
 except:
     print("[!] Somtings don't work, try again.")
