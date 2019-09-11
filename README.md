@@ -12,7 +12,7 @@ Set up the programm: <br>
 <code> sudo python3.7 setup.py </code> <br><br>
 And run the program: <br> 
 <code> bomb </code> <br><br>
-## Opions
+## Options
 Do you have two opions:
 1. Executable version (send a file to the victim). 
 2. Website version (open a lot of pages on the browser using surge.sh). 
